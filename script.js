@@ -1,30 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const themeToggle = document.getElementById("theme-toggle");
-    const body = document.body;
+// Initialize EmailJS
+(function() {
+    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+})();
 
-    // Check if user has a preferred theme saved
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-    }
+// Handle form submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    // Toggle theme
-    themeToggle.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("theme", "dark");
-        } else {
-            localStorage.setItem("theme", "light");
-        }
-    });
+    // Form data
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
 
-    // Project card animation
-    const projectCards = document.querySelectorAll(".project-card");
-    projectCards.forEach(card => {
-        card.addEventListener("mouseover", function () {
-            card.style.transform = "scale(1.05)";
+    var templateParams = {
+        from_name: name,
+        from_email: email,
+        message: message
+    };
+
+    // Send email using your service ID
+    emailjs.send('service_1ao1pzq', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+            alert('Message sent successfully!');
+            document.getElementById('contact-form').reset(); // Reset form after submission
+        }, function(error) {
+            alert('Failed to send message. Please try again later.');
         });
-        card.addEventListener("mouseout", function () {
-            card.style.transform = "scale(1)";
-        });
-    });
 });

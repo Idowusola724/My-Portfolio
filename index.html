@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idowu Adeleye - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
         <div class="container">
             <h1>Idowu Adeleye</h1>
             <p>Frontend Developer | Problem Solver | Innovator</p>
         </div>
     </header>
+
+    <!-- Hero Section -->
     <section id="hero" class="section">
         <div class="container">
             <img src="peach dress.jpeg" alt="Idowu Adeleye" class="profile-pic">
@@ -21,30 +26,103 @@
             <p>I specialize in turning ideas into interactive digital solutions with a focus on performance, accessibility, and seamless user experience.</p>
         </div>
     </section>
-    
 
-    <section id="projects" class="section">
+    <!-- Skills Section -->
+    <section id="skills" class="section">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <a href="https://idowusola724.github.io/movie-recommendation-2/" target="_blank" class="project-card">Movie Recommendation</a>
-                <a href="https://idowusola724.github.io/ecommerce-website/" target="_blank" class="project-card">E-commerce Website</a>
-                <a href="https://idowusola724.github.io/Krunchees/" target="_blank" class="project-card">Krunchees Snack Brand</a>
-                <a href="https://idowusola724.github.io/Uba-Mobile-app-inspiration/" target="_blank" class="project-card">UBA Mobile App Inspiration</a>
-                <a href="https://idowusola724.github.io/NAICOM-clone/" target="_blank" class="project-card">NAICOM Clone</a>
-                <a href="https://idowusola724.github.io/piggy-vest-investment-calculator/" target="_blank" class="project-card">PiggyVest Investment Calculator</a>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>Responsive Web Design</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>Debugging & Troubleshooting</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>Git & GitHub</h3>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <a href="https://idowusola724.github.io/movie-recommendation-2/" target="_blank" class="project-card">
+                    <h3>Movie Recommendation</h3>
+                    <p>A web app that suggests movies based on user preferences.</p>
+                </a>
+                <a href="https://idowusola724.github.io/ecommerce-website/" target="_blank" class="project-card">
+                    <h3>E-commerce Website</h3>
+                    <p>A responsive online store built with modern web technologies.</p>
+                </a>
+                <a href="https://idowusola724.github.io/Krunchees/" target="_blank" class="project-card">
+                    <h3>Krunchees Snack Brand</h3>
+                    <p>A portfolio website for a snack brand featuring product showcases.</p>
+                </a>
+                <a href="https://idowusola724.github.io/Uba-Mobile-app-inspiration/" target="_blank" class="project-card">
+                    <h3>UBA Mobile App Inspiration</h3>
+                    <p>A UI design inspiration for a mobile banking app interface.</p>
+                </a>
+                <a href="https://idowusola724.github.io/NAICOM-clone/" target="_blank" class="project-card">
+                    <h3>NAICOM Clone</h3>
+                    <p>A clone of the NAICOM website, demonstrating modern layout techniques.</p>
+                </a>
+                <a href="https://idowusola724.github.io/piggy-vest-investment-calculator/" target="_blank" class="project-card">
+                    <h3>PiggyVest Investment Calculator</h3>
+                    <p>An investment calculator app that helps users estimate returns on investments.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+            <form id="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
         <div class="container">
+            <p>Phone: <a href="tel:+2349065877751">09065877751</a></p>
             <p>Email: <a href="mailto:idowusola724@yahoo.com">idowusola724@yahoo.com</a></p>
-            <p>GitHub: <a href="https://github.com/idowusola724" target="_blank">github.com/idowusola724</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/idowu-adeleye-786b49138" target="_blank">Idowu Adeleye</a></p>
+            <div class="social-links">
+                <a href="https://github.com/idowusola724" target="_blank">
+                    <img src="correct github image.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/idowu-adeleye-786b49138" target="_blank">
+                    <img src="linedinnnnnn.png" alt="LinkedIn">
+                </a>
+            </div>
             <p>&copy; 2025 Idowu Adeleye. All rights reserved.</p>
         </div>
     </footer>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
