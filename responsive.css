@@ -1,0 +1,131 @@
+/* Mobile view (up to 767px) */
+@media (max-width: 767px) {
+    .hero {
+        display: flex;
+        flex-direction: column; /* Stack the items vertically */
+        text-align: center; /* Center content */
+        padding: 20px; /* Add padding to ensure content doesn't touch edges */
+    }
+
+    .hero1, .hero2 {
+        width: 100%; /* Make both sections full width */
+        margin-bottom: 20px; /* Space out sections */
+    }
+
+    .profile-pic {
+        width: 60%; /* Reduce image size for mobile view */
+        height: auto;
+        margin: 0 auto 20px; /* Center the image and add space below it */
+    }
+
+    .hero1 h1 {
+        font-size: 30px; /* Adjust heading size */
+        margin-bottom: 10px; /* Space between heading and paragraph */
+    }
+
+    .hero1 p {
+        font-size: 18px; /* Adjust paragraph size */
+        margin-bottom: 20px; /* Add space below paragraph */
+    }
+
+    .design {
+        font-size: 50px; /* Adjust design section font size */
+        margin: 20px 0; /* Add margin above and below the design section */
+    }
+
+    .design-p {
+        font-size: 25px; /* Adjust design description size */
+        margin: 10px 0; /* Add margin above and below */
+    }
+
+    .inner-hero {
+        display: flex;
+        flex-direction: column; /* Stack the inner hero elements */
+        align-items: center; /* Center text blocks */
+    }
+
+    .inner-hero > div {
+        margin-bottom: 20px; /* Add spacing between text blocks */
+        width: 100%; /* Ensure the inner blocks take full width */
+    }
+}
+
+/* Tablet view (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        display: flex;
+        flex-direction: row; /* Keep the items side by side */
+    }
+
+    .hero1, .hero2 {
+        width: 50%; /* 50% width for both sections */
+    }
+
+    .profile-pic {
+        width: 40%; /* Resize the image */
+    }
+
+    .hero1 h1 {
+        font-size: 40px; /* Adjust heading size */
+    }
+
+    .hero1 p {
+        font-size: 22px; /* Adjust paragraph size */
+    }
+
+    .design {
+        font-size: 70px; /* Adjust font size */
+    }
+
+    .design-p {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    .inner-hero {
+        flex-direction: row; /* Keep the inner hero elements side by side */
+    }
+
+    .inner-hero > div {
+        margin-right: 30px; /* Add spacing */
+    }
+}
+
+/* Desktop view (1025px and above) */
+@media (min-width: 1025px) {
+    .hero {
+        display: flex;
+        flex-direction: row; /* Keep the items side by side */
+    }
+
+    .hero1, .hero2 {
+        width: 50%; /* Keep equal width for both sections */
+    }
+
+    .profile-pic {
+        width: 60%; /* Resize the profile picture */
+    }
+
+    .hero1 h1 {
+        font-size: 50px; /* Larger font size */
+    }
+
+    .hero1 p {
+        font-size: 25px; /* Larger font size */
+    }
+
+    .design {
+        font-size: 100px; /* Large font size */
+    }
+
+    .design-p {
+        font-size: 35px; /* Larger font size */
+    }
+
+    .inner-hero {
+        flex-direction: row; /* Keep items side by side */
+    }
+
+    .inner-hero > div {
+        margin-right: 40px; /* Add spacing */
+    }
+}
